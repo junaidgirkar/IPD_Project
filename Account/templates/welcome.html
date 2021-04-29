@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WELCOME</title>
+</head>
+<body>
+User : {{ user }}<br>
+<div align="center">
+<a align="center" href="{% url 'login' %}"><h3>LOGIN</h3></a>
+<a align="center" href="{% url 'logout' %}"><h3>LOGOUT</h3></a>
+<a align="center" href="{% url 'logoutall' %}"><h3>LOGOUT ALL</h3></a>
+<a align="center" href="{% url 'user-register' %}"><h3>User Regiteration</h3></a>
+
+<a align="center" href="{% url 'user-display-all' %}"><h3>User Display All</h3></a>
+<a align="center" href="{% url 'user-display-single' pk=1%}"><h3>User Display Specific</h3></a>
+
+</div>
+
+</body>
+</html>
